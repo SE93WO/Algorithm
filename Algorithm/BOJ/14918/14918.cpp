@@ -1,11 +1,17 @@
-#include <iostream>
+#include <cstdio>
 using namespace std;
 
 int main() {
-	int a, b;
-	cin >> a >> b;
+	while (1) {
+		char S[256];
+		cin.getline(S, 256);
+		if (S[0] == '#') break;
 
-	cout << a + b;
+		int cnt = 0;
+		for (int i = 0; S[i]; i++) {
+			char c = S[i] - (S[i] >= 'a' ? 'a' - 'A' : 0);
+			if (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U') cnt++;
+		}
+		printf("%d\n", cnt);
+	}
 }
-
-
