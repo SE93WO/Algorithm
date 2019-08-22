@@ -1,3 +1,3 @@
-Baekjoon Online Judge
+BOJ
 -----
 Baekjoon Online Judge source codes
